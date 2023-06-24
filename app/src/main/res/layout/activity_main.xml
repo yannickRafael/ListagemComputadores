@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#067DD8"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/marca"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:hint="marca"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/modelo"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:hint="modelo"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/nrSerie"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:hint="numero de serie"
+                android:paddingStart="20dp" />
+
+            <Spinner
+                android:id="@+id/processador"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/ram"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:hint="RAM"
+                android:inputType="number"
+                android:paddingStart="20dp" />
+
+            <EditText
+                android:id="@+id/hd"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/frame"
+                android:hint="Armazenamento"
+                android:inputType="number"
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/gravar"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="gravar e listar" />
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>
