@@ -109,6 +109,14 @@ public class BaseDeDados extends SQLiteOpenHelper {
         sqLiteDatabase.close();
     }
 
+    public void apagar(String[] nrserie) {
+
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
+        sqLiteDatabase.delete(TABLE_NAME, "SERIE=?", nrserie);
+        sqLiteDatabase.close();
+    }
+
 
 
 
